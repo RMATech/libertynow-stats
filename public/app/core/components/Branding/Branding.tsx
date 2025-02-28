@@ -4,6 +4,9 @@ import { FC } from 'react';
 import { colorManipulator } from '@grafana/data';
 import { useTheme2 } from '@grafana/ui';
 
+// Liberty Now Text
+import {LN_TEXT} from './../../../../../libertynowBranding/lnText'
+
 export interface BrandComponentProps {
   className?: string;
   children?: JSX.Element | JSX.Element[];
@@ -59,8 +62,8 @@ export class Branding {
   static LoginBackground = LoginBackground;
   static MenuLogo = MenuLogo;
   static LoginBoxBackground = LoginBoxBackground;
-  static AppTitle = 'Grafana';
-  static LoginTitle = 'Welcome to Grafana';
+  static AppTitle = LN_TEXT.appTitle;
+  static LoginTitle = LN_TEXT.pages.login.welcome;
   static HideEdition = false;
   static GetLoginSubTitle = (): null | string => {
     return null;

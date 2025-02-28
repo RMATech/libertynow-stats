@@ -3,6 +3,7 @@ import { css } from '@emotion/css';
 import { GrafanaTheme2 } from '@grafana/data';
 import { useStyles2 } from '@grafana/ui';
 
+import {LN_TEXT} from './../../../../../libertynowBranding/lnText'
 const helpOptions = [
   { value: 0, label: 'Documentation', href: 'https://grafana.com/docs/grafana/latest' },
   { value: 1, label: 'Tutorials', href: 'https://grafana.com/tutorials' },
@@ -15,7 +16,7 @@ export const WelcomeBanner = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Welcome to Grafana</h1>
+      <h1 className={styles.title}>{LN_TEXT.pages.home.welcome}</h1>
       <div className={styles.help}>
         <h3 className={styles.helpText}>Need help?</h3>
         <div className={styles.helpLinks}>
