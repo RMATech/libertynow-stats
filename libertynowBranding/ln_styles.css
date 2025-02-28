@@ -65,21 +65,6 @@ body{
     font-size: 1.6rem;
 }
 
-
-/* Footer */
-.ln-footer{}
-.ln-footer__grafana{
-  display: none !important;
-}
-.ln-footer__copyright{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.ln-footer__copyright p{
-  font-size: 1.2rem;
-}
-
 /************************ Button *************************/
 a.css-hlb51f-button,
 a.css-9ilz2k-button,
@@ -196,4 +181,37 @@ a.css-1xeb9vl-button:hover{
 /* page: admin/users */
 a.css-9ilz2k-button{
   height: 39px !important;
+}
+
+
+/****************** Footer ***************/
+.ln-footer{}
+.ln-footer__grafana{
+  display: none !important;
+}
+.ln-footer__copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ln-footer__copyright p{
+  font-size: 1rem;
+}
+
+
+/****************** Login page ***************/
+
+h1.css-1gmqqtf{
+  font-size: 2rem;
+}
+.css-wppp5u{
+  margin-bottom: 20px;
+}
+@media (min-width: 544px) {
+  img.css-11rd68c{
+    margin-bottom:26px ;
+  }
+  h1.css-1gmqqtf {
+    font-size: 23px;
+  }
 }
