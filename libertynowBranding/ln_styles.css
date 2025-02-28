@@ -79,3 +79,121 @@ body{
 .ln-footer__copyright p{
   font-size: 1.2rem;
 }
+
+/************************ Button *************************/
+a.css-hlb51f-button,
+a.css-9ilz2k-button,
+button[type="submit"],
+button.css-9ilz2k-button,
+button.css-hlb51f-button,
+button[data-testid="data-testid RefreshPicker interval button"],
+button[data-testid="data-testid RefreshPicker run button"],
+button[data-testid="save-rule-and-exit"],
+button[data-testid="data-testid Save dashboard button"],
+button.css-j8i2g4-button{
+  background-color: var(--color-primary0) !important;
+  background: var(--color-primary0) !important;
+
+}
+a.css-hlb51f-button:hover,
+button[type="submit"]:hover,
+button.css-9ilz2k-button:hover,
+button.css-hlb51f-button:hover{
+  background-color: var(--color-primary1) !important;
+  background: var(--color-primary1) !important;
+}
+button[type="submit"],
+button[data-testid="data-testid Login button"],
+a.css-qz4eb-button{
+  height: 40px !important;
+}
+
+button.css-usje0n:hover{
+  color: var(--color-light0) !important;
+  text-decoration: underline;
+}
+button.css-1bb11nr-button{
+  border: 1px solid var(--color-primary0) !important;
+  color: var(--color-primary0);
+}
+button.css-1bb11nr-button:hover{
+  border: 1px solid var(--color-primary1) !important;
+  color: var(--color-primary1);
+  background:none;
+}
+
+button.css-1xeb9vl-button span{
+  color: var(--color-primary1) !important;
+}
+/************************* Input ***********************/
+div[data-testid="input-wrapper"],
+.css-rebjtg-input-wrapper,
+.css-1dk22sb-input-wrapper {
+  height: 40px !important;
+}
+
+input.css-xmqqi8-input-input:-webkit-autofill:focus,
+.css-rebjtg-input-wrapper:focus,
+.css-1dk22sb-input-wrapper:focus,
+.css-1dk22sb-input-wrapper,
+input:focus,
+.css-195iguw:focus-within,
+textarea:focus{
+  box-shadow: 0 0 0 2px #181b1f,0 0 0px 4px var(--color-primary0),inset 0 0 0 1px rgba(255, 255, 255, 0),inset 0 0 0 100px #111217!important;
+  -webkit-text-fill-color:rgb(204, 204, 220)!important;
+  border: none !important;
+}
+input:checked+label{
+  background-color: var(--color-primary0) !important;
+  border-color: var(--color-primary0) !important;
+}
+
+input#home-dashboard-select:focus,
+input#react-select-0-input:focus,
+input#react-select-1-input:focus,
+input#react-select-2-input:focus,
+input#react-select-3-input:focus,
+input#react-select-4-input:focus,
+input#react-select-5-input:focus,
+input#react-select-6-input:focus,
+input#shared-preferences-timezone-picker:focus{
+border: none !important;
+box-shadow: none !important;
+}
+
+/********************* label ****************************/
+/* pages:
+- /plugins
+- /org/serviceaccounts
+*/
+label.css-18zk0h1{
+  height: 34px !important;
+}
+
+label .css-1ayajk8:checked+span{
+  background-color: var(--color-primary0) !important;
+  border: var(--color-primary0) !important;
+}
+/********************* a tag ****************************/
+a[target]{
+  color: var(--color-primary0) !important;
+}
+a[target]:hover{
+  color: var(--color-primary1) !important;
+}
+
+a.css-y2q7cb-button,
+a.css-1xeb9vl-button
+{
+  color:rgba(var(--color-light1),0.4) !important;
+}
+a.css-y2q7cb-button:hover,
+a.css-1xeb9vl-button:hover{
+  text-decoration: underline;
+  background:none !important;
+}
+
+/* page: admin/users */
+a.css-9ilz2k-button{
+  height: 39px !important;
+}
