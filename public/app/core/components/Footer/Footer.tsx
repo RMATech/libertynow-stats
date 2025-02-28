@@ -6,6 +6,9 @@ import { config } from '@grafana/runtime';
 import { Icon, IconName, useStyles2 } from '@grafana/ui';
 import { t } from 'app/core/internationalization';
 
+// Liberty Now Footer
+import {LNFooter} from './../../../../../libertynowBranding/LNFooter';
+
 export interface FooterLink {
   target: LinkTarget;
   text: string;
@@ -104,8 +107,8 @@ export const Footer = memo(({ customLinks, hideEdition }: Props) => {
   const styles = useStyles2(getStyles);
 
   return (
-    <footer className={styles.footer}>
-      <div className="text-center">
+    <footer className={`${styles.footer} ln-footer`}>
+      <div className="text-center ln-footer__grafana">
         <ul className={styles.list}>
           {links.map((link, index) => (
             <li className={styles.listItem} key={index}>
@@ -114,6 +117,7 @@ export const Footer = memo(({ customLinks, hideEdition }: Props) => {
           ))}
         </ul>
       </div>
+      <LNFooter className="ln-footer__copyright"/>
     </footer>
   );
 });

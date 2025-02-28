@@ -64,3 +64,18 @@ body{
     font-family: var(--font-family-regular);
     font-size: 1.6rem;
 }
+
+
+/* Footer */
+.ln-footer{}
+.ln-footer__grafana{
+  display: none !important;
+}
+.ln-footer__copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ln-footer__copyright p{
+  font-size: 1.2rem;
+}
