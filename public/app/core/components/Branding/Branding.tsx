@@ -4,8 +4,9 @@ import { FC } from 'react';
 import { colorManipulator } from '@grafana/data';
 import { useTheme2 } from '@grafana/ui';
 
-// Liberty Now Text
+// Import LibertyNow Text and Color
 import {LN_TEXT} from './../../../../../libertynowBranding/lnText'
+import {LN_COLOR} from './../../../../../libertynowBranding/lnColor'
 
 export interface BrandComponentProps {
   className?: string;
@@ -27,7 +28,7 @@ const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
       right: 0,
       bottom: 0,
       top: 0,
-      background: `url(public/img/g8_login_${theme.isDark ? 'dark' : 'light'}.svg)`,
+      background: LN_COLOR.dark0,
       backgroundPosition: 'top center',
       backgroundSize: 'auto',
       backgroundRepeat: 'no-repeat',
