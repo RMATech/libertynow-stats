@@ -2,6 +2,8 @@ import './core/trustedTypePolicies';
 declare let __webpack_public_path__: string;
 declare let __webpack_nonce__: string;
 
+// Liberty Now Branding: styles
+import './../../libertynowBranding/ln_styles.css'
 // Check if we are hosting files on cdn and set webpack public path
 if (window.public_cdn_path) {
   __webpack_public_path__ = window.public_cdn_path;

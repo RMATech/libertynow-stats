@@ -1,0 +1,66 @@
+html {
+/**
+REMs (root em) are a unit of measurement that represent the font size of the root element. The default font size is 16px, which is equivalent to 100% (i.e., 1rem = 16px). In this project, 
+however, the default font size has been set to 62.5%, making 1rem equal to 10px. This adjustment simplifies REM calculations by establishing a straightforward 10px = 1rem ratio. For example, 
+13px is equivalent to 1.3rem (13/10), which is much easier to compute than converting 13px based on the default ratio of 16px (13/16 ≈ 0.8125rem).
+*/
+  
+    font-size: 62.5%; /* 1rem = 10px; (100/16)*10 = 62.5%;
+            /* 1 */
+    -webkit-text-size-adjust: 62.5;
+    /* 2 */
+    -ms-text-size-adjust: 62.5;
+    /* 2 */
+  
+    /*Big-screen*/
+    @media screen and (min-width: 90em) {
+      font-size: 62.5%;
+    }
+  
+    /*Laptop*/
+    @media screen and (max-width: 90em) {
+      font-size: 56.25%;
+    }
+  
+    /*iPad-Pro*/
+    @media screen and (max-width: 65em) {
+      font-size: 46.88%;
+    }
+  
+    /*iPad*/
+    @media screen and (max-width: 49em) {
+      font-size: 43.75%;
+    }
+  
+    /*Phone*/
+    @media screen and (max-width: 37.5em) {
+      font-size: 47%;
+    }
+  
+    box-sizing: border-box;
+  }
+
+/* Variables */
+:root {
+    --color-primary0: #008175;
+    --color-primary1: #018d80;
+
+    --color-secondary0: #fde401;
+
+    --color-dark0: #000;
+    --color-dark1: #333;
+
+    --color-light0: #fff;
+    --color-light1: #f6f6f6;
+
+    --color-danger0: #dc3545;
+  
+    --font-family-regular: 'rubikRegular';
+    --font-family-medium: 'rubikMedium';
+    --font-family-bold: 'rubikBold';
+  }
+
+body{
+    font-family: var(--font-family-regular);
+    font-size: 1.6rem;
+}
