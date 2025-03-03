@@ -68,6 +68,7 @@ body{
 /************************ Button *************************/
 a.css-hlb51f-button,
 a.css-9ilz2k-button,
+a.css-ik64x4-button,
 button[type="submit"],
 button.css-9ilz2k-button,
 button.css-hlb51f-button,
@@ -75,7 +76,10 @@ button[data-testid="data-testid RefreshPicker interval button"],
 button[data-testid="data-testid RefreshPicker run button"],
 button[data-testid="save-rule-and-exit"],
 button[data-testid="data-testid Save dashboard button"],
-button.css-j8i2g4-button{
+button.css-j8i2g4-button,
+button.css-1kb66uo-button,
+button.css-1xqw7wn-button,
+button.css-177u1ia-button{
   background-color: var(--color-primary0) !important;
   background: var(--color-primary0) !important;
 
@@ -87,35 +91,32 @@ button.css-hlb51f-button:hover{
   background-color: var(--color-primary1) !important;
   background: var(--color-primary1) !important;
 }
-button[type="submit"],
-button[data-testid="data-testid Login button"],
-a.css-qz4eb-button{
-  height: 40px !important;
-}
-
 button.css-usje0n:hover{
   color: var(--color-light0) !important;
   text-decoration: underline;
 }
-button.css-1bb11nr-button{
+button.css-1bb11nr-button,
+button.css-kaf12i-button{
   border: 1px solid var(--color-primary0) !important;
   color: var(--color-primary0);
+  border-color: var(--color-primary0);
 }
 button.css-1bb11nr-button:hover{
   border: 1px solid var(--color-primary1) !important;
-  color: var(--color-primary1);
+  color: var(--color-primary1) !important;
   background:none;
 }
-
+button.css-kaf12i-button:hover,
+button.css-5xkbgb-button{
+  color: var(--color-light0) !important;
+}
 button.css-1xeb9vl-button span{
   color: var(--color-primary1) !important;
 }
+
+
+
 /************************* Input ***********************/
-div[data-testid="input-wrapper"],
-.css-rebjtg-input-wrapper,
-.css-1dk22sb-input-wrapper {
-  height: 40px !important;
-}
 
 input.css-xmqqi8-input-input:-webkit-autofill:focus,
 .css-rebjtg-input-wrapper:focus,
@@ -151,19 +152,19 @@ box-shadow: none !important;
 - /plugins
 - /org/serviceaccounts
 */
-label.css-18zk0h1{
-  height: 34px !important;
-}
+
 
 label .css-1ayajk8:checked+span{
   background-color: var(--color-primary0) !important;
   border: var(--color-primary0) !important;
 }
 /********************* a tag ****************************/
-a[target]{
+a[target],
+a.css-14zr4pm{
   color: var(--color-primary0) !important;
 }
-a[target]:hover{
+a[target]:hover,
+a.css-14zr4pm:hover{
   color: var(--color-primary1) !important;
 }
 
@@ -177,13 +178,43 @@ a.css-1xeb9vl-button:hover{
   text-decoration: underline;
   background:none !important;
 }
-
-/* page: admin/users */
-a.css-9ilz2k-button{
-  height: 39px !important;
+/* Home -> box */
+h2.css-be4okr{
+  color: var(--color-light1) !important;
+}
+a .css-1l29dzv,
+a .css-krepcj,
+a .css-13kbrnr,
+a .css-13kbrnr
+ {
+  color:  var(--color-light1) !important;
 }
 
+.css-h819p0:hover a{
+  color: var(--color-primary0) !important;
+}
 
+/************** table *******************/
+td span.css-1gtmkc5{
+  color: var(--color-primary1) !important;
+
+}
+
+a.css-t9we71{
+  color: var(--color-light1) !important;
+}
+
+/************** :before pseudo-element *******************/
+a.css-1s2wx05-activeTabStyle::before,
+button.css-1s2wx05-activeTabStyle::before{
+  background-image: linear-gradient(270deg, var(--color-primary0) 0%, var(--color-primary0) 100%) !important
+}
+
+.css-t9we71::before,
+.css-gn9vwc::before,
+.css-gn9vwc::before{
+  background-image: linear-gradient(to right, var(--color-primary0) 0%, var(--color-primary0)  100%) !important;
+}
 /****************** Footer ***************/
 .ln-footer{}
 .ln-footer__grafana{
@@ -200,7 +231,10 @@ a.css-9ilz2k-button{
 
 
 /****************** Login page ***************/
-
+.login-content-box .css-1j9cu86-input-wrapper,
+.login-content-box button[type="submit"]{
+  height: 40px !important;
+}
 h1.css-1gmqqtf{
   font-size: 2rem;
 }
@@ -215,3 +249,11 @@ h1.css-1gmqqtf{
     font-size: 23px;
   }
 }
+
+/****************** sidebar nav ***************/
+.css-g0u209::before,
+.css-1vbkc3h-combobox-option::before,
+.css-1e8vg9s-content-outline-item-button::before{
+  background-image:linear-gradient(0.01deg, var(--color-primary0) 0.01%, var(--color-primary0) 99.99%)   !important;
+}
+
