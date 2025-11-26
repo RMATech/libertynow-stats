@@ -261,10 +261,8 @@ h1.css-1gmqqtf{
 }
 
 /***************** Profile nav list ***********/
-a[data-role="menuitem"].css-1k5elyl,
-button.css-1k5elyl{
+a[data-role="menuitem"][href="/profile"].css-1k5elyl,
+a[data-role="menuitem"][href="/profile/notifications"].css-1k5elyl,
+a[data-role="menuitem"][href="/profile/password"].css-1k5elyl{
   display: none !important;
-}
-a[data-role="menuitem"][href="/logout"].css-1k5elyl{
-  display:block !important
 }
