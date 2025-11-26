@@ -114,7 +114,9 @@ button.css-1xeb9vl-button span{
   color: var(--color-primary1) !important;
 }
 
-
+button[aria-label="Profile"] {
+  display: none !important;
+}
 
 /************************* Input ***********************/
 
@@ -257,3 +259,7 @@ h1.css-1gmqqtf{
   background-image:linear-gradient(0.01deg, var(--color-primary0) 0.01%, var(--color-primary0) 99.99%)   !important;
 }
 
+/***************** App notification list ***********/
+.css-1bdu9tb-app-notifications-list{
+  display: none !important;
+}
