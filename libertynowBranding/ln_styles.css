@@ -114,10 +114,6 @@ button.css-1xeb9vl-button span{
   color: var(--color-primary1) !important;
 }
 
-button[aria-label="Profile"] {
-  display: none !important;
-}
-
 /************************* Input ***********************/
 
 input.css-xmqqi8-input-input:-webkit-autofill:focus,
@@ -262,4 +258,13 @@ h1.css-1gmqqtf{
 /***************** App notification list ***********/
 .css-1bdu9tb-app-notifications-list{
   display: none !important;
+}
+
+/***************** Profile nav list ***********/
+a[data-role="menuitem"].css-1k5elyl,
+button.css-1k5elyl{
+  display: none !important;
+}
+a[data-role="menuitem"][href="/logout"].css-1k5elyl{
+  display:block !important
 }
