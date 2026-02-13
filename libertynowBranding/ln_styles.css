@@ -267,3 +267,10 @@ a[data-role="menuitem"][href="/profile/password"].css-1k5elyl,
 a[data-role="menuitem"][href="/profile"].css-1k5elyl ~ button.css-1k5elyl {
   display: none !important;
 }
+
+/*************** Login page ************/
+
+/* Hide Sign in with OAuth button */
+.login-content-box .css-7zmg4z{
+  display: none !important;
+}
