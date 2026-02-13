@@ -3,8 +3,9 @@ declare let __webpack_public_path__: string;
 declare let __webpack_nonce__: string;
 
 // Liberty Now Branding: styles and JS
-import './../../libertynowBranding/ln_styles.css'
-import './../../libertynowBranding/ln_script.js'
+import './../../libertynowBranding/ln_styles.css';
+import {applyKiosk} from  './../../libertynowBranding/ln_script.js';
+
 // Check if we are hosting files on cdn and set webpack public path
 if (window.public_cdn_path) {
   __webpack_public_path__ = window.public_cdn_path;
@@ -34,4 +35,6 @@ const prepareInit = async () => {
 
 prepareInit().then(() => {
   app.init();
+
+ applyKiosk();
 });
